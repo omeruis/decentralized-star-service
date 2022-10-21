@@ -22,11 +22,11 @@
  *
  */
 
-// const HDWallet = require('truffle-hdwallet-provider');
-// const infuraKey = "fj4jll3k.....";
+const HDWallet = require('truffle-hdwallet-provider');
+const infuraKey = "2747e4854a294db6b5cf37a3737ac92e";
 //
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+const fs = require('fs');
+const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
   /**
@@ -51,6 +51,11 @@ module.exports = {
       port: 9545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
     },
+
+    goerli: {
+      provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/v3/${infuraKey}`),
+      network_id: 5,       // goerli's id
+    }
 
     // Another network with more advanced options...
     // advanced: {
@@ -89,7 +94,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      // version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.5.16",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
