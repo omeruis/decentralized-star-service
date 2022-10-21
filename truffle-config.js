@@ -22,7 +22,7 @@
  *
  */
 
-const HDWallet = require('truffle-hdwallet-provider');
+const HDWalletProvider = require('truffle-hdwallet-provider');
 const infuraKey = "2747e4854a294db6b5cf37a3737ac92e";
 //
 const fs = require('fs');
