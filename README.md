@@ -4,6 +4,23 @@
 ### ToDo
 This Starter Code has already implemented the functionalities you implemented in the StarNotary (Version 2) exercise, and have comments in all the files you need to implement your tasks.
 
+### Details for Project Submission Instructions:
+```bash
+# Truffle version
+v5.6.2 (core: 5.6.2)
+
+# OpenZeppelin version
+2.3
+
+# ERC-721 Token Name
+Star Notary Token
+
+# ERC-721 Token Symbol
+SNT
+
+# Token Address on Goerli testnet
+0x68d7f27dB49e21d79b51AdabdF5FCCD92c48DBf0
+```
 
 
 ### Dependencies
